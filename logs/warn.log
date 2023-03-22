@@ -1,0 +1,55 @@
+[ LOGGER ]  23-03-20 19:10:11  [WARN] : ruta  / metodo GET no implementada
+[ LOGGER ]  23-03-20 19:10:12  [WARN] : ruta  /favicon.ico metodo GET no implementada
+[ LOGGER ]  23-03-20 19:14:14  [WARN] : ruta  /api/user metodo GET no implementada
+[ LOGGER ]  23-03-20 19:14:26  [WARN] : ruta  /api/user/auth metodo GET no implementada
+[ LOGGER ]  23-03-20 19:14:54  [WARN] : ruta  /api/user/auth metodo GET no implementada
+[ LOGGER ]  23-03-20 19:14:57  [WARN] : ruta  /api/user/auth metodo GET no implementada
+[ LOGGER ]  23-03-20 23:46:16  [WARN] : ruta  /api metodo GET no implementada
+[ LOGGER ]  23-03-21 17:50:58  [WARN] : ruta  /api/products/641a139f46f7a065ec0f1967 metodo POST no implementada
+[ LOGGER ]  23-03-21 17:55:42  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 17:56:26  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 17:59:02  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 17:59:07  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 18:04:27  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 18:04:32  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 18:04:47  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 18:04:59  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 18:05:16  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 18:05:56  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 18:06:11  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 18:07:46  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 18:11:55  [WARN] : ruta  /api/products/ metodo PUT no implementada
+[ LOGGER ]  23-03-21 19:10:08  [WARN] : ruta  /api/cart/641a26d69fac2efd6e6dfa25/products/641a18b9a332353729084b11 metodo POST no implementada
+[ LOGGER ]  23-03-21 19:10:53  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:10:53  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:11:17  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:11:17  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:12:12  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:12:12  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:13:07  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:13:07  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:14:25  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:14:25  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:14:30  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:14:30  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:16:03  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:16:03  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:16:27  [ERROR] : este this.models[entity].getById is not a function
+[ LOGGER ]  23-03-21 19:16:27  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:16:39  [ERROR] : este this.models[entity].getById is not a function
+[ LOGGER ]  23-03-21 19:16:39  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:17:07  [ERROR] : este this.models[entity].getById is not a function
+[ LOGGER ]  23-03-21 19:18:45  [ERROR] : este Cannot read properties of undefined (reading 'getById')
+[ LOGGER ]  23-03-21 19:19:55  [ERROR] : este id_cart is not defined
+[ LOGGER ]  23-03-21 19:20:23  [ERROR] : este this.models[entity].fi is not a function
+[ LOGGER ]  23-03-21 19:20:47  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:21:16  [ERROR] : esteOTRO Parameter "filter" to updateOne() must be an object, got 641a26d69fac2efd6e6dfa25
+[ LOGGER ]  23-03-21 20:21:32  [WARN] : ruta  / metodo GET no implementada
+[ LOGGER ]  23-03-21 20:21:33  [WARN] : ruta  /favicon.ico metodo GET no implementada
+[ LOGGER ]  23-03-21 20:21:48  [WARN] : ruta  /api/auth/login metodo POST no implementada
+[ LOGGER ]  23-03-21 20:21:55  [WARN] : ruta  /api/auth/register metodo GET no implementada
+[ LOGGER ]  23-03-21 20:22:38  [WARN] : ruta  / metodo GET no implementada
+[ LOGGER ]  23-03-21 20:23:08  [WARN] : ruta  /api/auth/register metodo POST no implementada
+[ LOGGER ]  23-03-21 20:24:29  [WARN] : ruta  /api/auth/register metodo GET no implementada
+[ LOGGER ]  23-03-21 20:24:48  [WARN] : ruta  /api/auth/register metodo GET no implementada
+[ LOGGER ]  23-03-21 20:25:19  [WARN] : ruta  / metodo GET no implementada

@@ -1,0 +1,25 @@
+
+[ LOGGER ]  23-03-21 19:10:53  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:10:53  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:11:17  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:11:17  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:12:12  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:12:12  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:13:07  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:13:07  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:14:25  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:14:25  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:14:30  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:14:30  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:16:03  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:16:03  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:16:27  [ERROR] : este this.models[entity].getById is not a function
+[ LOGGER ]  23-03-21 19:16:27  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:16:39  [ERROR] : este this.models[entity].getById is not a function
+[ LOGGER ]  23-03-21 19:16:39  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:17:07  [ERROR] : este this.models[entity].getById is not a function
+[ LOGGER ]  23-03-21 19:18:45  [ERROR] : este Cannot read properties of undefined (reading 'getById')
+[ LOGGER ]  23-03-21 19:19:55  [ERROR] : este id_cart is not defined
+[ LOGGER ]  23-03-21 19:20:23  [ERROR] : este this.models[entity].fi is not a function
+[ LOGGER ]  23-03-21 19:20:47  [ERROR] : undefined
+[ LOGGER ]  23-03-21 19:21:16  [ERROR] : esteOTRO Parameter "filter" to updateOne() must be an object, got 641a26d69fac2efd6e6dfa25
