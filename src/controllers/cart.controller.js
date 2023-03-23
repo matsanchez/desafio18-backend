@@ -3,9 +3,8 @@ import { productService } from "../services/index.service.js";
 import loggerApp from "../utils/logger.utils.js";
 
 const getById = async (req, res) => {
-  let { id } = req.params;
-  let result = await cartService.getById(id);
-  res.send(result);
+  let products = await cartService.getById(req.user.cart_id);
+  res.render("pages/cart", { products, idCart: req.user.cart_id });
 };
 const create = async (req, res) => {};
 const addProductCart = async (req, res) => {

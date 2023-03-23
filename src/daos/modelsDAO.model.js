@@ -34,13 +34,12 @@ export default class ModelsMongoDAO {
 
   get = async (options, entity) => {
     if (!this.models[entity]) throw new Error("Entity not found in models");
-    let results = await this.models[entity].findOne(options).lean();
+    let results = await this.models[entity].find(options).lean();
     return results;
   };
 
   getById = async (options, entity) => {
     let result = await this.models[entity].findOne({ _id: options }).lean();
-    console.log(result);
     return result;
   };
 

@@ -3,16 +3,14 @@ import passport from "passport";
 import { msgFlash } from "../middlewares/middlewares.js";
 import { logger } from "../middlewares/loggers.middleware.js";
 import { uploader } from "../middlewares/multer.middleware.js";
+import usersController from "../controllers/users.controller.js";
+//import { auth } from "../middlewares/middlewares.js";
 
 const router = Router();
 
 router
-  .get("/login", logger, msgFlash, (req, res) => {
-    res.render("pages/login");
-  })
-  .get("/register", logger, msgFlash, (req, res) => {
-    res.render("pages/register");
-  })
+  .get("/login", logger, msgFlash, usersController.renderLogin)
+  .get("/register", logger, msgFlash, usersController.renderRegister)
   .post(
     "/register",
     uploader,

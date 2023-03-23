@@ -1,24 +1,33 @@
 import { productService } from "../services/index.service.js";
+import loggerApp from "../utils/logger.utils.js";
 
 const getAll = async (req, res) => {
-  let result = await productService.get();
-  res.send(result);
+  try {
+    const products = await productService.get();
+    res.render("pages/home", { userLogin: req.user.username, products, idCart: req.user.cart_id });
+  } catch (error) {
+    loggerApp.error(error);
+  }
 };
+
 const getById = async (req, res) => {
   let { id } = req.params;
   let result = await productService.getById(id);
   res.send(result);
 };
+
 const create = async (req, res) => {
   let { name, price, thumbnail } = req.body;
   let result = await productService.save({ name, price, thumbnail });
   res.send(result);
 };
+
 const deleteById = async (req, res) => {
   let { id } = req.params;
   let result = await productService.delete(id);
   res.send(result);
 };
+
 const deleteAll = (req, res) => {};
 
 const updateById = async (req, res) => {

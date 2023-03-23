@@ -4,7 +4,7 @@ import cluster from "cluster";
 import core from "os";
 import loggerApp from "./utils/logger.utils.js";
 import msgFlash from "connect-flash";
-import dontenv from "dotenv";
+import dotenv from "dotenv";
 import express from "express";
 import handlebars from "express-handlebars";
 import { Server } from "socket.io";
@@ -16,8 +16,8 @@ import productsRouter from "./routes/products.routes.js";
 import cartRouter from "./routes/cart.routes.js";
 import userRouter from "./routes/user.routes.js";
 import indexRouter from "./routes/index.routes.js";
-/* 
 import profileRouter from "./routes/profile.routes.js";
+/* 
 import cartRouter from "./routes/cart.routes.js";
 import orderRouter from "./routes/order.routes.js";
 import randomsRouter from "./routes/randoms.routes.js"; */
@@ -25,7 +25,7 @@ import { initializePassport } from "./strategies/passport.strategy.js";
 import { mensajesSchema } from "./models/mensajes.model.js";
 /* import { productsSchema } from "./models/products.model.js"; */
 
-dontenv.config();
+dotenv.config();
 
 if (PORTconfigYargs === null) {
   PORTconfigYargs = process.env.PORT;
@@ -76,11 +76,11 @@ if (MODserver.toLowerCase() === "cluster" && cluster.isPrimary) {
   app.set("views", "./src/public/views");
   app.set("view engine", "hbs");
   app.use("/api/user/auth", userRouter);
+  app.use("/api/user/profile", profileRouter);
   app.use("/api/products", productsRouter);
   app.use("/api/cart", cartRouter);
   app.use("/", indexRouter);
   /* app.use("/", indexRouter);
-  app.use("/api/profile", profileRouter);
   app.use("/api/cart", cartRouter);
   app.use("/api/order", orderRouter);
   app.use("/api/randoms", randomsRouter); */
