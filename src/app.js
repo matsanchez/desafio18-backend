@@ -1,4 +1,3 @@
-/* import("./config/mongo.config.js"); */
 import { PORTconfigYargs, MODserver } from "./config/yargs.config.js";
 import cluster from "cluster";
 import core from "os";
@@ -17,13 +16,9 @@ import cartRouter from "./routes/cart.routes.js";
 import userRouter from "./routes/user.routes.js";
 import indexRouter from "./routes/index.routes.js";
 import profileRouter from "./routes/profile.routes.js";
-/* 
-import cartRouter from "./routes/cart.routes.js";
 import orderRouter from "./routes/order.routes.js";
-import randomsRouter from "./routes/randoms.routes.js"; */
 import { initializePassport } from "./strategies/passport.strategy.js";
 import { mensajesSchema } from "./models/mensajes.model.js";
-/* import { productsSchema } from "./models/products.model.js"; */
 
 dotenv.config();
 
@@ -80,10 +75,7 @@ if (MODserver.toLowerCase() === "cluster" && cluster.isPrimary) {
   app.use("/api/products", productsRouter);
   app.use("/api/cart", cartRouter);
   app.use("/", indexRouter);
-  /* app.use("/", indexRouter);
-  app.use("/api/cart", cartRouter);
   app.use("/api/order", orderRouter);
-  app.use("/api/randoms", randomsRouter); */
   app.use((req, res) => {
     loggerApp.warn(`ruta ${req.baseUrl} ${req.url} metodo ${req.method} no implementada`);
     res

@@ -1,13 +1,13 @@
 import { Router } from "express";
 import { logger } from "../middlewares/loggers.middleware.js";
+import orderController from "../controllers/order.controller.js";
 import { auth } from "../middlewares/middlewares.js";
-import OrderController from "../controllers/order.controller.js";
 
-const orderRouter = Router();
+const router = Router();
 
-orderRouter
-  .get("/", logger, auth, OrderController.getOrderById)
-  .get("/:id", logger, auth, OrderController.getOrderById)
-  .post("/", logger, auth, OrderController.generateOrder);
+router
+  .get("/", logger, auth, orderController.getById)
+  .get("/:id", logger, auth, orderController.getById)
+  .post("/", logger, auth, orderController.create);
 
-export default orderRouter;
+export default router;

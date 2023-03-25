@@ -58,6 +58,15 @@ export default class ModelsMongoDAO {
     return result;
   };
 
+  deleteAll = async (id_cart, entity) => {
+    try {
+      await this.models[entity].findByIdAndUpdate(id_cart, { products: [] });
+      return;
+    } catch (error) {
+      loggerApp.error(error);
+    }
+  };
+
   createProductInCart = async (id, document, entity) => {
     if (id) {
       try {
@@ -84,6 +93,20 @@ export default class ModelsMongoDAO {
         }
       }
       return this.models[entity].updateOne({ _id: id_cart }, { products: newList });
+    } catch (error) {
+      loggerApp.error(error);
+    }
+  };
+
+  createOrder = async (params, products, total, entity) => {
+    try {
+      const order = await this.models[entity].create({
+        name: params.user.name,
+        email: params.user.username,
+        products: products.products,
+        total: total,
+      });
+      return order;
     } catch (error) {
       loggerApp.error(error);
     }

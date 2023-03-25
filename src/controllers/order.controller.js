@@ -1,47 +1,36 @@
-const getAll = (req,res)=>{}
-const getById = (req,res)=>{}
-const create = (req,res)=>{}
-const deleteById = (req,res)=>{}
-const deleteAll = (req,res)=>{}
-const updateById = (req,res)=>{}
-
-export {
-  getAll, getById,create,deleteById,deleteAll,updateById
-}
-
-
-
-/*import loggerApp from "../utils/logger.utils.js";
-import OrderService from "../services/order.services.js";
-import CartService from "../services/cart.services.js";
+import { orderService } from "../services/index.service.js";
+import { cartService } from "../services/index.service.js";
 import { orderEmail } from "../utils/nodemailer.js";
 import { sendSMS } from "../utils/twilio.utils.js";
 
-class OrderController {
-  constructor() {}
+const getAll = (req, res) => {};
 
-  async generateOrder(req, res) {
-    try {
-      const order = await OrderService.generateOrder(req);
-      await CartService.deleteAllProdToCart(req.user.cart_id);
-      if (order) {
-        orderEmail(req.user, order);
-        sendSMS(req.user.phone);
-      }
-      res.redirect(`/api/order/${order._id}`);
-    } catch (error) {
-      loggerApp.error(error);
-    }
+const getById = async (req, res) => {
+  try {
+    const order = await orderService.getById(req.params.id);
+    res.render("pages/checkout", { order });
+  } catch (error) {
+    loggerApp.error(error);
   }
+};
 
-  async getOrderById(req, res) {
-    try {
-      const order = await OrderService.getOrderById(req.params.id);
-      res.render("pages/checkout", { order });
-    } catch (error) {
-      loggerApp.error(error);
-    }
+const create = async (req, res) => {
+  let products = await cartService.getById(req.user.cart_id);
+  const total = products.products.reduce((item, _item) => {
+    return item + _item.price;
+  }, 0);
+  const order = await orderService.createOrder(req, products, total);
+  if (order) {
+    orderEmail(req.user, order);
+    sendSMS(req.user.phone);
   }
-}
+  res.redirect(`/api/order/${order._id}`);
+};
 
-export default new OrderController();*/
+const deleteById = (req, res) => {};
+
+const deleteAll = (req, res) => {};
+
+const updateById = (req, res) => {};
+
+export default { getAll, getById, create, deleteById, deleteAll, updateById };

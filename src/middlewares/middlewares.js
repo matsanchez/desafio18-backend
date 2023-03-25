@@ -1,6 +1,6 @@
 export const auth = (req, res, next) => {
   if (!req.isAuthenticated()) {
-    res.redirect("/");
+    res.redirect("/api/user/auth/login");
   } else {
     next();
   }

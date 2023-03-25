@@ -95,3 +95,23 @@
 [ LOGGER ]  23-03-23 18:41:56  [ERROR] : undefined
 [ LOGGER ]  23-03-23 18:42:03  [WARN] : ruta  /api/user/logout metodo GET no implementada
 [ LOGGER ]  23-03-23 18:42:05  [ERROR] : undefined
+[ LOGGER ]  23-03-23 21:42:13  [ERROR] : undefined
+[ LOGGER ]  23-03-23 21:43:25  [ERROR] : undefined
+[ LOGGER ]  23-03-23 21:43:35  [ERROR] : undefined
+[ LOGGER ]  23-03-23 21:43:58  [WARN] : ruta  /favicon.ico metodo GET no implementada
+[ LOGGER ]  23-03-23 21:44:23  [WARN] : ruta  /api/profile metodo GET no implementada
+[ LOGGER ]  23-03-23 21:45:38  [WARN] : ruta  /api/user/index.js metodo GET no implementada
+[ LOGGER ]  23-03-23 21:51:14  [WARN] : ruta  /api/width=%22100px%22 metodo GET no implementada
+[ LOGGER ]  23-03-23 21:51:26  [WARN] : ruta  /api/Nose metodo GET no implementada
+[ LOGGER ]  23-03-23 21:53:00  [WARN] : ruta  /api/order metodo POST no implementada
+[ LOGGER ]  23-03-24 18:23:37  [ERROR] : undefined
+[ LOGGER ]  23-03-24 18:23:46  [WARN] : ruta  /favicon.ico metodo GET no implementada
+[ LOGGER ]  23-03-24 18:25:39  [WARN] : ruta  /api/order metodo POST no implementada
+[ LOGGER ]  23-03-24 18:55:53  [WARN] : ruta  /api/order metodo GET no implementada
+[ LOGGER ]  23-03-24 19:59:58  [ERROR] : undefined
+[ LOGGER ]  23-03-24 20:53:21  [ERROR] : undefined
+[ LOGGER ]  23-03-24 21:10:28  [WARN] : ruta  /api/user/index.js metodo GET no implementada
+[ LOGGER ]  23-03-24 21:57:07  [ERROR] : undefined
+[ LOGGER ]  23-03-24 21:57:32  [ERROR] : undefined
+[ LOGGER ]  23-03-24 21:59:37  [WARN] : ruta  /api/cart/641e3bde3d6b1f0429eec8b6/products/641cc49a942027dd38d21c0a/pages/cart metodo GET no implementada
+[ LOGGER ]  23-03-24 22:00:40  [WARN] : ruta  /api/cart/641e3bde3d6b1f0429eec8b6/products/64066d2fd632e602f5670227/api/cart metodo GET no implementada
